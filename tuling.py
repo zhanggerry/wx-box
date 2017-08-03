@@ -1,10 +1,15 @@
+# -*- coding: utf-8 -*-
+#!/usr/bin/python
+# Filename: request.py
+
+
 import requests
 
 def getResponse(_info):
 	#print(_info)
 	apiUrl = 'http://www.tuling123.com/openapi/api'
 	data = {
-    	'key'    : '7c1ccc2786df4e1685dda9f7a98c4ec9', # 如果这个Tuling Key不能用，那就换一个
+    	'key'    : 'cdacfe9222e849a097ee44711cb37603', # 如果这个Tuling Key不能用，那就换一个
     	'info'   : _info, # 这是我们发出去的消息
     	'userid' : 'wechat-robot', # 这里你想改什么都可以
 	}
